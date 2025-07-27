@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react"
+import { NavLink } from "react-router-dom"
 
 export default function CallMenuPanel() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
-    setShowDropdown((prev) => !prev);
+    setShowDropdown((prev) => !prev)
   }
 
   return (
@@ -47,5 +47,5 @@ export default function CallMenuPanel() {
         </div>
       </div>
     </section>
-  );
+  )
 }

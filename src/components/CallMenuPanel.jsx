@@ -25,7 +25,7 @@ export default function CallMenuPanel() {
 
             {showDropdown && (
               <div className="dropdown-menu">
-                <NavLink to="/create-later">
+                <NavLink to="/">
                   <i className="fa-solid fa-link"></i>
                   Create a meeting for later
                 </NavLink>
@@ -33,11 +33,15 @@ export default function CallMenuPanel() {
                   <i className="fa-solid fa-plus"></i>
                   Start an instant meeting
                 </NavLink>
-                <NavLink to="/schedule">
-                  <i className="fa-regular fa-calendar"></i>
-                  Schedule in Google Calendar
-                </NavLink>
-              </div>
+                <a
+                      href="https://calendar.google.com/calendar/u/0/r/eventedit?vcon=meet&dates=now&hl=en&pli=1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-regular fa-calendar"></i>
+                      Schedule in Google Calendar
+              </a>
+            </div>
             )}
           </div>
 

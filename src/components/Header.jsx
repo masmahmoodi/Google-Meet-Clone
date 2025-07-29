@@ -15,8 +15,6 @@ export default function Header(){
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-user"></i>
                 </div>
-                {/* <i class="material-icons">report_problem</i> */}
-
             </div>
        </nav>
     )

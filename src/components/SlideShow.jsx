@@ -53,7 +53,6 @@ export default function SlideShow() {
   ]
 
   const [currentIndex, setCurrentIndex] = React.useState(0)
-
   function next() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
   }

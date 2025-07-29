@@ -395,12 +395,33 @@ nav{
   align-items: center;
 }
 
+
+.bottom-bar i {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #3c4043;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0 6px;
+}
+
+.bottom-bar i:hover {
+  background-color: #5f6368;
+}
+
+
 .control-icons i {
   background-color: #3c4043;
   color: white;
-  padding: 14px;
+  /* padding: 14px; */
   border-radius: 50%;
-  font-size: 16px;
+  /* font-size: 16px; */
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -437,7 +458,7 @@ nav{
 .side-icons i {
   background-color: #3c4043;
   color: white;
-  padding: 14px;
+  /* padding: 14px; */
   border-radius: 50%;
   font-size: 16px;
   cursor: pointer;

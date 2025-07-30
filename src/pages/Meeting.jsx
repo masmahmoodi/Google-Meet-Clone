@@ -1,5 +1,5 @@
 import React from "react"
-
+import useCurrentDateTime from "../hooks/useCurrentDateTime"
 export default function Meeting() {
   const persons = [
     {
@@ -25,7 +25,7 @@ export default function Meeting() {
   const [micOn, setMicOn] = React.useState(false)
   const [videoOn, setVideoOn] = React.useState(false)
   const [callOn, setCallOn] = React.useState(false)
-
+  const clock = useCurrentDateTime()
   const personsToDisplay = persons.map((person, index) => (
     <div key={index} className="person">
       <i className="fa-solid fa-microphone-slash top-right-icon"></i>
@@ -47,7 +47,7 @@ export default function Meeting() {
 
       <div className="bottom-bar">
         <div className="meeting-info">
-          <span>4:12:13 PM</span>
+          <span>{clock}</span>
           <span>|</span>
           <span>1234</span>
         </div>

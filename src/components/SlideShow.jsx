@@ -51,10 +51,13 @@ export default function SlideShow() {
       description: "Designed for tomorrow's hybrid teams and classrooms.",
     },
   ]
-
+const date = new Date()
   const [currentIndex, setCurrentIndex] = React.useState(0)
   function next() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
+    
+    console.log(date.toLocaleString())
+
   }
 
   function prev() {

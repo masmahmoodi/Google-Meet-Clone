@@ -1,6 +1,6 @@
 import React from "react"
-import logo from "../assets/images/logo.png";
-import useCurrentDateTime from "../hooks/useCurrentDateTime";
+import logo from "../assets/images/logo.png"
+import useCurrentDateTime from "../hooks/useCurrentDateTime"
 export default function Header(){
     const clock = useCurrentDateTime()
 

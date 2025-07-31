@@ -403,23 +403,17 @@ nav{
   z-index: 10;
   border-top: 1px solid #5f6368;
 }
-
-
-
 .meeting-info {
   display: flex;
   gap: 10px;
   color: #e8eaed;
   font-size: 14px;
 }
-
 .control-icons.center-controls {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-
-
 .bottom-bar i {
   width: 48px;
   height: 48px;
@@ -443,53 +437,38 @@ nav{
 .control-icons i {
   background-color: #3c4043;
   color: white;
-  /* padding: 14px; */
   border-radius: 50%;
-  /* font-size: 16px; */
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 .control-icons i:hover {
   background-color: #5f6368;
 }
-
-/* Red background when off */
 .control-icons i.active-control {
   background-color: #ea4335;
 }
-
-/* Red call off */
 .end-call {
   background-color: #ea4335;
 }
-
 .end-call:hover {
   background-color: #d93025;
 }
-
-/* Normal call on style */
 .call-on {
   background-color: #3c4043;
 }
-
 .side-icons {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-
 .side-icons i {
   background-color: #3c4043;
   color: white;
-  /* padding: 14px; */
   border-radius: 50%;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 .side-icons i:hover {
   background-color: #5f6368;
 }
-

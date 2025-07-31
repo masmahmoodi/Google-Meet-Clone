@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+
 .icons i{
     color: red;
 }
@@ -180,6 +192,8 @@ nav{
 }
 .slide-show-wrapper {
   padding: 0 60px;
+  margin-top:-10px;
+  /* background-color: red; */
 }
 
 .slider-container {
@@ -291,28 +305,38 @@ nav{
 
 
 /* Meeting  */
+.meeting-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  overflow: hidden;
+}
 
 .person-container {
+  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding: 40px 0;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .person {
   background-color: #3c4043;
   color: white;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   position: relative;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
 }
+
 
 .person p {
   position: absolute;

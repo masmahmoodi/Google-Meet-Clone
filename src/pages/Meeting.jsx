@@ -1,5 +1,6 @@
 import React from "react"
 import useCurrentDateTime from "../hooks/useCurrentDateTime"
+import { Link } from "react-router-dom"
 export default function Meeting() {
   const persons = [
     {
@@ -25,7 +26,9 @@ export default function Meeting() {
   const [micOn, setMicOn] = React.useState(false)
   const [videoOn, setVideoOn] = React.useState(false)
   const [callOn, setCallOn] = React.useState(false)
+  // custom hook
   const clock = useCurrentDateTime()
+
   const personsToDisplay = persons.map((person, index) => (
     <div key={index} className="person">
       <i className="fa-solid fa-microphone-slash top-right-icon"></i>
@@ -42,7 +45,7 @@ export default function Meeting() {
   ))
 
   return (
-    <>
+    <div className="meeting-wrapper">
       <div className="person-container">{personsToDisplay}</div>
 
       <div className="bottom-bar">
@@ -71,13 +74,14 @@ export default function Meeting() {
           <i className="fa-solid fa-desktop"></i>
           <i className="fa-solid fa-hand"></i>
           <i className="fa-solid fa-ellipsis-vertical"></i>
-
+          <Link to="/">
           <i
             className={`fa-solid ${
               callOn ? "fa-phone" : "fa-phone-slash"
             } ${!callOn ? "end-call" : "call-on"}`}
             onClick={() => setCallOn(!callOn)}
           ></i>
+          </Link>
         </div>
 
         <div className="side-icons">
@@ -86,6 +90,6 @@ export default function Meeting() {
           <i className="fa-solid fa-message"></i>
         </div>
       </div>
-    </>
+    </div>
   )
 }
